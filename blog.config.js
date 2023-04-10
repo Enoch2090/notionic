@@ -12,12 +12,12 @@ const BLOG = {
   lightBackground: '#F6F8FA', // use hex value, don't forget '#' e.g #fffefc
   darkBackground: '#212936', // use hex value, don't forget '#'
   path: '', // leave this empty unless you want to deploy Notionic in a folder
-  since: 2022, // If leave this empty, current year will be used.
+  since: 2018, // If leave this empty, current year will be used.
   postsPerPage: 10,
   sortByDate: true,
   pagesShow: {
     newsletter: true,
-    notes: true,
+    notes: false,
     projects: true,
     contact: true,
     books: true,
@@ -29,9 +29,9 @@ const BLOG = {
   ogImageGenerateHost: 'og-zl.vercel.app', // The link to generate OG image, don't end with a slash
   defaultCover: '/cover.jpg',
   socialLink: {
-    twitter: 'https://twitter.com/izuolan',
-    github: 'https://github.com/izuolan',
-    telegram: 'https://t.me/zuolan'
+    twitter: '',
+    github: 'https://github.com/Enoch2090',
+    telegram: ''
   },
   seo: {
     keywords: ['Blog', 'Website', 'Notion', 'Poetry', 'Programming', 'DataScience', 'MachineLearning', 'Python'],
