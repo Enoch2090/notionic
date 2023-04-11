@@ -44,13 +44,6 @@ const Footer = ({ fullWidth }) => {
     },
     {
       id: 2,
-      name: t.NAV.BOOKS,
-      to: '/books',
-      icon: <BookOpenIcon className='inline-block mb-1 h-5 w-5' />,
-      show: BLOG.pagesShow.books
-    },
-    {
-      id: 3,
       name: t.NAV.CONTACT,
       to: '/contact',
       icon: <MailIcon className='inline-block mb-1 h-5 w-5' />,
@@ -60,9 +53,8 @@ const Footer = ({ fullWidth }) => {
 
   return (
     <motion.div
-      className={`mt-6 flex-shrink-0 m-auto w-full text-gray-600 dark:text-gray-300 transition-all ${
-        !fullWidth ? 'max-w-3xl md:px-8' : 'px-4 md:px-24'
-      }`}
+      className={`mt-6 flex-shrink-0 m-auto w-full text-gray-600 dark:text-gray-300 transition-all ${!fullWidth ? 'max-w-3xl md:px-8' : 'px-4 md:px-24'
+        }`}
     >
       <footer className='max-w-screen-2xl px-4 md:px-8 mx-auto'>
         <div className='flex flex-col md:flex-row justify-between items-center border-b dark:border-gray-600 py-1'>
@@ -72,11 +64,10 @@ const Footer = ({ fullWidth }) => {
                 link.show && (
                   <Link passHref key={link.id} href={link.to} scroll={false}>
                     <li key={link.id}
-                      className={`${
-                        activeMenu === link.to
+                      className={`${activeMenu === link.to
                           ? 'bg-gray-200 dark:bg-gray-700'
                           : ''
-                      } hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer rounded-lg block py-1 px-2 nav`}
+                        } hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer rounded-lg block py-1 px-2 nav`}
                     >
                       <div className='font-light'>
                         {link.icon}
