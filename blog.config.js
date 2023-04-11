@@ -13,7 +13,7 @@ const BLOG = {
   darkBackground: '#212936', // use hex value, don't forget '#'
   path: '', // leave this empty unless you want to deploy Notionic in a folder
   since: 2018, // If leave this empty, current year will be used.
-  postsPerPage: 10,
+  postsPerPage: 12,
   sortByDate: true,
   pagesShow: {
     newsletter: true,
@@ -26,7 +26,7 @@ const BLOG = {
   showWeChatPay: false,
   previewImagesEnabled: false,
   autoCollapsedNavBar: false, // The automatically collapsed navigation bar
-  ogImageGenerateHost: 'og-zl.vercel.app', // The link to generate OG image, don't end with a slash
+  ogImageGenerateHost: 'https://og-zl.vercel.app/api/default?border=solid&description=Welcome%20to%20Nowhere%27s%20Land&logo=https%3A%2F%2Fenoch2099.vercel.app%2Ffavicon.png&siteName=Enoch2090&theme=light', // The link to generate OG image, don't end with a slash
   defaultCover: '/cover.jpg',
   socialLink: {
     twitter: '',
